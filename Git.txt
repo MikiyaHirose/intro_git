@@ -43,10 +43,22 @@ Gitリポジトリのホスティングサービス
 
 ■Gitの基本的なワークフロー
 ①ファイルの変更をステージングエリアへ追加する
+　→　git add Git.txt
+　
 ②ローカルリポジトリにコミットする
+　→　git commit
+　→　エディタが起動してコメントを入力できるようになる
+　→　viエディタのようなものなので気を付ける
+　→　最後の書き込み時にESC押した後に、「:wq」を入力して保存して終了
+　
 ③リモートリポジトリにプッシュする
-
-
+　→　Githubを開いて、リポジトリを作成する
+　→　コンソールから以下のコマンドを実行して、gitにGithubを登録する
+　　　git remote add origin https://github.com/MikiyaHirose/intro_git.git
+　→　プッシュする
+　　　git push -u origin master
+　　　
+④Githubを再表示すると、登録したファイルが、リポジトリに登録されている
 
 　
 
